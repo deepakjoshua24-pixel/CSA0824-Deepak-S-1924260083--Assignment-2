@@ -1,0 +1,21 @@
+input              normalised   result
+tn 09 ab 1234      TN09AB1234   valid
+    receipt: TN 09 AB 1234
+KA-01-M-0007       KA01M0007    valid
+    receipt: KA 01 M 0007
+TN9AB1234          TN9AB1234    INVALID
+TN 22 1234 AB      TN221234AB   INVALID
+mh 12 xy 9876      MH12XY9876   valid
+    receipt: MH 12 XY 9876
+DL-3-C-4567        DL3C4567     INVALID
+
+For lengths 9 and 10, s[-4:] is the final four digits; s[4:-4] is the 1- or 2-letter series.
+Strings are immutable: upper() returns a new string and leaves the original unchanged.
+Complexity: normalise, validation, and formatting each take O(L) time; O(L) output space.
+
+SUPPLIED TODO PROGRAM - COMPLETED VERSION
+tn 09 ab 1234   -> TN09AB1234  valid
+KA-01-M-0007    -> KA01M0007   valid
+TN9AB1234       -> TN9AB1234   INVALID
+TN 22 1234 AB   -> TN221234AB  INVALID
+receipt: TN 09 AB 1234

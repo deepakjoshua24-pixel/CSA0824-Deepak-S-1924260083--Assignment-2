@@ -1,0 +1,13 @@
+hand-check values: {1: 1, 2: 2, 3: 3, 4: 5, 5: 8, 6: 13}
+naive and memo call counts:
+n=10 value=89 agree=True naive_calls=177 naive_s=0.000016 memo_calls=11 memo_s=0.000006
+n=20 value=10946 agree=True naive_calls=21891 naive_s=0.001938 memo_calls=21 memo_s=0.000008
+n=25 value=121393 agree=True naive_calls=242785 naive_s=0.021707 memo_calls=26 memo_s=0.000015
+n=30 value=1346269 agree=True naive_calls=2692537 naive_s=0.239982 memo_calls=31 memo_s=0.000021
+memo n=1000 raised RecursionError; recursion limit=1000
+iterative n=1000 digits=209 time=0.000050s
+Complexity: naive O(phi^n) time; memo O(n) time and O(n) cache/stack; iterative O(n) time, O(1) extra space.
+
+SUPPLIED TODO PROGRAM - COMPLETED VERSION
+naive: 121393 calls = 242785
+memo : 121393 calls = 26

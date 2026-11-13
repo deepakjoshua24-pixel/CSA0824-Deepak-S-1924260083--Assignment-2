@@ -1,0 +1,13 @@
+buggy: ['Tea', 'Vada'] ['Tea', 'Vada']
+fixed: ['Tea'] ['Vada']
+three independent customers: [['Customer 1'], ['Customer 2'], ['Customer 3']]
+buggy stored default: (['Tea', 'Vada'],)
+total=105.00, GST=5.00
+scope: ('local to this call', 11) global counter: 1
+Use positional arguments for clear order, keywords for clarity, defaults for optional values.
+Complexity: appending one item is O(1) amortized time; each customer's list uses O(m) space for m items.
+
+SUPPLIED TODO PROGRAM - COMPLETED VERSION
+['Tea', 'Vada'] ['Tea', 'Vada']
+['Tea'] ['Vada']
+buggy stored default: (['Tea', 'Vada'],)

@@ -1,0 +1,5 @@
+n=30; equal_results=True; naive_calls=2692537
+naive=0.244664s memo=0.000023s iterative=0.000004s
+iterative n=1000; digits=209; time=0.000050s
+Objective: preserve the result while reducing exponential repeated work and avoiding recursive stack growth.
+Trade-off: iterative method keeps only two prior values; it cannot directly provide the full intermediate cache.

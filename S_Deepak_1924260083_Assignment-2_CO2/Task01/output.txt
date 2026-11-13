@@ -1,0 +1,12 @@
+name units ration_card age_over_80 | buggy separate-if | correct if-elif | match-case
+  H1   100       False       False |             full subsidy |     full subsidy | full subsidy
+  H2   100        True       False | full subsidy, partial subsidy |     full subsidy | full subsidy
+  H3   101        True       False |          partial subsidy |  partial subsidy | partial subsidy
+  H4   101       False       False |               no subsidy |       no subsidy | no subsidy
+  H5   200        True       False |          partial subsidy |  partial subsidy | partial subsidy
+  H6   200       False       False |               no subsidy |       no subsidy | no subsidy
+  H7   201       False       False |               no subsidy |       no subsidy | no subsidy
+  H8   201       False        True |         senior exception | senior exception | senior exception
+
+Complexity: each fixed if/elif or match decision is O(1) time and O(1) extra space.
+A lookup searched linearly through k slabs is O(k) time and O(k) table space.
